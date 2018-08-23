@@ -22,14 +22,16 @@ def search(entry):
     
     
 #//////////////////////////////////////////////////////////////////////////////
-#Me indica como estan conetados aquellos nodos sin color asignado y retorno 
-#una matrix que indica dicha caracteristica -> "connections"
-    connections = np.zeros((noColor.shape[0], entry.shape[0]))
-    for k1 in range(noColor.shape[0]): 
-        for k2 in range(entry.shape[0]): 
+#Me indica con que colores estan conectados aquellos puntos sin color asignado,
+#retorno una matrix de colores donde cada columna de esta corresponde a una
+#fila de la matriz noColor. La matrix colores posee en cada elemnto de una fila 
+#los colores con los que el nodo esta conectado -> "colores"
+    colors = np.zeros((noColor.shape[0], entry.shape[0]))
+    for k1 in range(noColor.shape[0]):
+        for k2 in range(entry.shape[0]):
             if (entry[noColor[k1],k2] == 1):
-                connections[k1,k2] = 1
-    print(connections)
+                colors[k1,k2] = entry[k2,k2]
+    print(colors)
 #//////////////////////////////////////////////////////////////////////////////
 
 
