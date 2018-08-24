@@ -18,16 +18,16 @@ def search(entry):
 #////////////////////////////////////ONE///////////////////////////////////////
 #Busco las diagonales con cero (eso indica sin color asignado) y retorno que 
 #filas de la matrix de adyacencia son aquellas sin color asignado -> "noColor" 
-    print(entry)
-    print("*")
-    [i,j] = np.where(entry==0)
+    # print(entry)
+    # print("*")
+    [i,j] =  np.where(entry==0)
     noColor = []
     for k in range(i.shape[0]) :
         if i[k] == j[k]:
             noColor = np.append(noColor,[i[k]])
     noColor = noColor.astype(int)
-    print(noColor)
-    print("*")
+    # print(noColor)
+    # print("*")
 #//////////////////////////////////////////////////////////////////////////////
     
     
@@ -52,20 +52,20 @@ def search(entry):
             af = a
             bf = b
             final_list = list(map(int, med_list))
-    print(colors)
-    print("*")
-    print(final_list) #Color list 
-    print("*")
-    print(af) #Heuristic
-    print("*")
-    print(bf) #Node
+    # print(colors)
+    # print("*")
+    # print(final_list) #Color list
+    # print("*")
+    # print(af) #Heuristic
+    # print("*")
+    # print(bf) #Node
     
     return (final_list,af,bf)
 #//////////////////////////////////////////////////////////////////////////////    
-    
-entry = np.array([[1,1,1,1,0,0],[1,2,1,0,1,0],[1,0,0,1,1,1],[1,1,0,3,1,1],
-              [1,0,1,1,0,1],[1,1,0,1,1,0]]) #matrientry de entada 
-    
-search(entry)   
-    
-    
+#
+# entry = np.array([[1,1,1,1,0,0],[1,2,1,0,1,0],[1,0,0,1,1,1],[1,1,0,3,1,1],
+#               [1,0,1,1,0,1],[1,1,0,1,1,0]]) #matrientry de entada
+#
+# search(entry)
+#
+#
