@@ -52,20 +52,5 @@ def search(entry):
             af = a
             bf = b
             final_list = list(map(int, med_list))
-    # print(colors)
-    # print("*")
-    # print(final_list) #Color list
-    # print("*")
-    # print(af) #Heuristic
-    # print("*")
-    # print(bf) #Node
     
     return (final_list,af,bf)
-#//////////////////////////////////////////////////////////////////////////////    
-#
-# entry = np.array([[1,1,1,1,0,0],[1,2,1,0,1,0],[1,0,0,1,1,1],[1,1,0,3,1,1],
-#               [1,0,1,1,0,1],[1,1,0,1,1,0]]) #matrientry de entada
-#
-# search(entry)
-#
-#

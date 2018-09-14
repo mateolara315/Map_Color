@@ -6,10 +6,10 @@ def inArray():
 
 
     for x in range(i):
-        if i <= 0 or i>10:
+        if i <= 0 or i>20:
              print("Failure!")
              break
-        elif j <= 0 or j>10:
+        elif j <= 0 or j>20:
              print("Failure!")
              break
         else:
